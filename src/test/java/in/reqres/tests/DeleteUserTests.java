@@ -10,7 +10,7 @@ import static io.restassured.RestAssured.given;
 public class DeleteUserTests extends TestBase {
 
     @Test
-    @DisplayName("Delete user")
+    @DisplayName("User can be deleted")
     void deleteUserTest(){
         step("Send delete request to delete user", () ->
                 given(requestSpec)

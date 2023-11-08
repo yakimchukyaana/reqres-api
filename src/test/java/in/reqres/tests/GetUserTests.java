@@ -43,7 +43,7 @@ public class GetUserTests extends TestBase {
     }
 
     @Test
-    @DisplayName("1")
+    @DisplayName("Users list is correct")
     void getCorrectListOfUsersTest() {
         UserListResponseModel response = step("Send get request for list of users", () ->
                 given(requestSpec)
