@@ -41,7 +41,7 @@
 
 
 <a id="jenkins"></a>
-## <img src="media/logos/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Run tests with <a target="_blank" href="https://jenkins.autotests.cloud/job/student-yakimchukyaana-qa_guru_21-reqres-api/"> Jenkins </a>
+## <img src="media/logos/jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Run tests with <a target="_blank" href="https://jenkins.autotests.cloud/job/student-yakimchukyaana-qa_guru_21-reqres-api/"> Jenkins </a>
 
 To run tests with Jenkins you need to click on the Build button. After running, you will see an allure report which appears near every run.
 
@@ -57,7 +57,7 @@ gradle clean test
 ```
 
 <a id="allureReport"></a>
-## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logos/Allure.svg"> </a> <a target="_blank" href="https://jenkins.autotests.cloud/job/student-yakimchukyaana-qa_guru_21-reqres-api/allure/"> Allure </a> report
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logos/allure.svg"> </a> <a target="_blank" href="https://jenkins.autotests.cloud/job/student-yakimchukyaana-qa_guru_21-reqres-api/allure/"> Allure </a> report
 
 Allure report for tests looks like this: 
 <p align="center">
