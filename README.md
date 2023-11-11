@@ -57,7 +57,7 @@ gradle clean test
 ```
 
 <a id="allureReport"></a>
-## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logos/allure.svg"> </a> <a target="_blank" href="https://jenkins.autotests.cloud/job/student-yakimchukyaana-qa_guru_21-reqres-api/allure/"> Allure </a> report
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logos/allure.svg"> </a> <a target="_blank" href="https://jenkins.autotests.cloud/job/student-yakimchukyaana-qa_guru_21-reqres-api/allure/"> Allure </a> reports
 
 Allure report for tests looks like this: 
 <p align="center">
