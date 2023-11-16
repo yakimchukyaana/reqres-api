@@ -104,5 +104,5 @@ There you can find all information about crucial things such as:
 After each build test results are sent to a `Telegram` chat. It looks like this
 
 <p align="center">
-<img title="telegram" src="media/screenshots/notification.jpeg">
+<img width="50%" title="telegram" src="media/screenshots/notification.jpeg">
 </p>
