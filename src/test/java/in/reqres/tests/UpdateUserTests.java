@@ -3,6 +3,7 @@ package in.reqres.tests;
 import in.reqres.models.update.UpdateUserRequestModel;
 import in.reqres.models.update.UpdateUserResponseModel;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static in.reqres.specs.Specs.requestSpec;
@@ -11,9 +12,11 @@ import static io.restassured.RestAssured.given;
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 
+@DisplayName("Update user tests")
 public class UpdateUserTests extends TestBase {
 
     @Test
+    @Tag("update")
     @DisplayName("User info can be updated with patch request")
     void updateUserInfoTest() {
         UpdateUserRequestModel updateData = new UpdateUserRequestModel();
@@ -35,6 +38,7 @@ public class UpdateUserTests extends TestBase {
     }
 
     @Test
+    @Tag("update")
     @DisplayName("User info can be updated with put request")
     void putUserInfoTest() {
         UpdateUserRequestModel updateData = new UpdateUserRequestModel();

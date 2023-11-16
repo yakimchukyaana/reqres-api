@@ -54,3 +54,33 @@ tasks.withType(Test) {
         }
     }
 }
+
+task create_test(type: Test){
+    useJUnitPlatform{
+        includeTags("create")
+    }
+}
+
+task delete_test(type: Test){
+    useJUnitPlatform{
+        includeTags("delete")
+    }
+}
+
+task get_test(type: Test){
+    useJUnitPlatform{
+        includeTags("get")
+    }
+}
+
+task register_test(type: Test){
+    useJUnitPlatform{
+        includeTags("register")
+    }
+}
+
+task update_test(type: Test){
+    useJUnitPlatform{
+        includeTags("update")
+    }
+}

@@ -3,6 +3,7 @@ package in.reqres.tests;
 import in.reqres.models.create.CreateUserRequestModel;
 import in.reqres.models.create.CreateUserResponseModel;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static in.reqres.specs.Specs.createUserResponse201Spec;
@@ -11,9 +12,11 @@ import static io.restassured.RestAssured.given;
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 
+@DisplayName("Create user tests")
 public class CreateUserTests extends TestBase {
 
     @Test
+    @Tag("create")
     @DisplayName("User can be successfully created")
     void successfullyCreateUserTest() {
         CreateUserRequestModel createData = new CreateUserRequestModel();

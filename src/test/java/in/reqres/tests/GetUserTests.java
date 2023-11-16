@@ -3,6 +3,7 @@ package in.reqres.tests;
 import in.reqres.models.user.UserListResponseModel;
 import in.reqres.models.user.UserResponseModel;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static in.reqres.specs.Specs.*;
@@ -11,9 +12,11 @@ import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@DisplayName("Get user tests")
 public class GetUserTests extends TestBase {
 
     @Test
+    @Tag("get")
     @DisplayName("Single user not found")
     void singleUserNotFoundTest() {
         step("Verify User not found request", () ->
@@ -26,6 +29,7 @@ public class GetUserTests extends TestBase {
     }
 
     @Test
+    @Tag("get")
     @DisplayName("Single user is found")
     void singleUserTest() {
         UserResponseModel response = step("Send get request for single user", () ->
@@ -43,6 +47,7 @@ public class GetUserTests extends TestBase {
     }
 
     @Test
+    @Tag("get")
     @DisplayName("Users list is correct")
     void getCorrectListOfUsersTest() {
         UserListResponseModel response = step("Send get request for list of users", () ->

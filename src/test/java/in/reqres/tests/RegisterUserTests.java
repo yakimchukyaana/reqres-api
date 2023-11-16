@@ -4,6 +4,7 @@ import in.reqres.models.register.MissingPasswordResponseModel;
 import in.reqres.models.register.RegisterUserRequestModel;
 import in.reqres.models.register.RegisterUserResponseModel;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static in.reqres.specs.Specs.*;
@@ -11,9 +12,11 @@ import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
 
+@DisplayName("Register user tests")
 public class RegisterUserTests extends TestBase {
 
     @Test
+    @Tag("register")
     @DisplayName("User can be successfully registered")
     void successfullyRegisterUserTest() {
         RegisterUserRequestModel registerData = new RegisterUserRequestModel();
@@ -35,6 +38,7 @@ public class RegisterUserTests extends TestBase {
     }
 
     @Test
+    @Tag("register")
     @DisplayName("User can't be registered without password")
     void unsuccessfullyRegisterUserTest() {
         RegisterUserRequestModel regData = new RegisterUserRequestModel();
