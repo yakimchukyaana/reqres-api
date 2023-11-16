@@ -37,5 +37,3 @@ public class CreateUserTests extends TestBase {
         });
     }
 }
-
-//test
